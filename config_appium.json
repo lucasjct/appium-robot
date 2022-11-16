@@ -1,0 +1,7 @@
+{
+    "automationName": "UiAutomator2",
+    "platformName": "Android",
+    "deviceName": "Android Emulator",
+    "udid": "emulator-5554",
+    "app": "C:\\apptest\\apptest\\twp.apk"
+  }
