@@ -24,7 +24,19 @@ Precisamos, ainda em __Variáveis do Sistema__, passar o caminho dos binários (
 
 ![image](https://user-images.githubusercontent.com/38733166/202263608-e128cd72-4793-49a2-a5db-32d85ebe54de.png)  
 
-Tudo que é passado para a variável PATH, se tornará global no sistema. Ou seja, seu escopo será toda parte do sistema, não exclusivamente um diretório.   
+Tudo que é passado para a variável PATH, se tornará global no sistema. Ou seja, seu escopo será toda parte do sistema, não exclusivamente um diretório.     
+
+### Android Studio  
+
+O Android Studio é uma plataforma para desenvolvimento de aplicativos Mobile, precisamos dele porque o SDK (Conjunto de ferramentas para desenvolvimento Android) e AVD (Android Virtual Device) está acomplado na plataforma e será útil para automação dos testes.  
+
+Para criar nosso device, usaremos o AVD Manager: 
+
+ #### Configurar as variáveis de ambiente do Android Studio.   
+ 
+ 
+ 
+![image](https://user-images.githubusercontent.com/38733166/202269152-591d1d69-b43a-47b5-adcd-dca675139f4f.png)
 
 
 ### Appium    
