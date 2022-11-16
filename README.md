@@ -87,11 +87,11 @@ Se clicarmos em __Edit Configurations__, podemos notar que se as variáveis `JAV
 ![image](https://user-images.githubusercontent.com/38733166/202280600-22a0bdc4-0c02-4940-b6e0-efe38a3a390e.png)   
 
 
-De volta à tela inicial e clicarmos em __Start Server__, será aberta a tela que mostra as requisições que enviamos e respostas do servidor Appium. Nesta tela, podemos clicar na lupa do lado superior direito. Será aberto o __Inspector__ no qual faremos a configuração do device após o criarmos no Android Studio.  
+De volta à tela inicial e clicarmos em __Start Server__, será aberta a tela que mostra as requisições que enviamos e respostas do servidor Appium.Neste momento, o servidor está online na porta 4723. Nesta tela, podemos clicar na lupa do lado superior direito. Será aberto o __Inspector__ no qual faremos a configuração do device após o criarmos no Android Studio.  
 
 Lupa fica no canto superior direito   
 
-![image](https://user-images.githubusercontent.com/38733166/202281483-a23d57be-38d3-4c4f-b1c0-5e79e583a418.png)
+![image](https://user-images.githubusercontent.com/38733166/202282657-a825bb6a-a683-4908-8e98-bc27ddc9ba80.png)
 
 
 Tela do Appium Inspector  
