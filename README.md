@@ -89,7 +89,7 @@ Se clicarmos em __Edit Configurations__, podemos notar que se as variáveis `JAV
 
 De volta à tela inicial e clicarmos em __Start Server__, será aberta a tela que mostra as requisições que enviamos e respostas do servidor Appium. Nesta tela, podemos clicar na lupa do lado superior direito. Será aberto o __Inspector__ no qual faremos a configuração do device após o criarmos no Android Studio.  
 
-Luá fica no canto superior direito   
+Lupa fica no canto superior direito   
 
 ![image](https://user-images.githubusercontent.com/38733166/202281483-a23d57be-38d3-4c4f-b1c0-5e79e583a418.png)
 
