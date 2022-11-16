@@ -1,6 +1,6 @@
 # appium-robot  
 
-## Pré-requisitos  
+## Pré-requisitos   
 
 ### Python   
 Como utilizaremos o Robot Framework neste projeto, é um pré-requisito termos a instalação do Python, uma vez que precisaremos utilizar o `pip`, gernciador de pacotes do Python, para instalar a libraries do Robot.
@@ -28,7 +28,9 @@ Tudo que é passado para a variável PATH, se tornará global no sistema. Ou sej
 
 ### Android Studio  
 
-O Android Studio é uma plataforma para desenvolvimento de aplicativos Mobile, precisamos dele porque o SDK (Conjunto de ferramentas para desenvolvimento Android) e AVD (Android Virtual Device) está acomplado na plataforma e será útil para automação dos testes.  
+O Android Studio é uma plataforma para desenvolvimento de aplicativos Mobile, precisamos dele porque o SDK (Conjunto de ferramentas para desenvolvimento Android) e AVD (Android Virtual Device) está acomplado na plataforma e será útil para automação dos testes.    
+
+Baixar [Android Studio](https://developer.android.com/studio)
 
 Para criar nosso device, usaremos o AVD Manager: 
 
@@ -38,7 +40,7 @@ Para criar nosso device, usaremos o AVD Manager:
  
  ![image](https://user-images.githubusercontent.com/38733166/202271692-b7f57ac3-d57c-4a45-88e0-e8899c508a00.png)  
  
- Mais uma vez em __variáveis do sistema__, devemos adicionar novos diretórios na variável `PATH`, passando os valores com %ANDROID_HOME%\ . Essa 'sinstaxe', já traz o diretório que informamos incialmente quando definimos o diretório valor para `ANDROID_HOME` acima. Então, agora precisaremos apenas de algumas outras pastas que são exibidas abaixo, mas você pode encontrar no local que está o `SDK`
+ Mais uma vez em __variáveis do sistema__, devemos adicionar novos diretórios na variável `PATH`, passando os valores com `%ANDROID_HOME%\` . Essa 'sintaxe', já traz o diretório que informamos incialmente quando definimos o diretório valor para `ANDROID_HOME` acima. Então, agora precisaremos apenas de algumas outras pastas que são exibidas abaixo, mas você pode encontrar no local que está o `SDK`
  
  ![image](https://user-images.githubusercontent.com/38733166/202273642-d829e038-f1a4-48a6-9022-6a4d34950bcb.png)
 
@@ -49,12 +51,56 @@ Para criar nosso device, usaremos o AVD Manager:
 ![image](https://user-images.githubusercontent.com/38733166/202269152-591d1d69-b43a-47b5-adcd-dca675139f4f.png)
 
 
-### Appium    
+### Appium     
 ![image](https://upload.wikimedia.org/wikipedia/commons/8/84/Appium.png?20220131094201)    
 
 
 Appium é uma ferramenta que permite inspecionar componentes da interface gráfica de apps nativos e híbrido para Android e IOS, os quais utilizamos para automação de testes.
-Appium possui um client em que configuramos o app e device que vamos interagir e também possui um servidor que recebe as requisições que enviamos para o device (que pode ser um dispositivo físico ou emulado).   
+Appium possui um client em que configuramos o app e device que vamos interagir e também possui um servidor que recebe as requisições que enviamos para o device (que pode ser um dispositivo físico ou emulado).    
+
+#### Instalar o server do Appium com NodeJS.
+ Baixar uma versão LTS (versão estável) do NodeJS.  
+ Baixar [NodeJS](https://nodejs.org/en/)  
+ 
+ Agora precisamos instralar de maneira global o servidor Appium:  
+ `npm install appium -g`   
+ 
+ Instalar o Appium Doctor:    
+ `npm install appium-doctor -g`  
+ 
+ Executar o Appium Doctor para verificar se o ambiente está com todas as configurações corretas para executar os testes.  
+ `appium-doctor --android`  
+ 
+ A saída esperada deve ser como o print abaixo. Onde está destacado, não precisamos nos preocupar porque são dependência opcionais, por isso destaquei.  
+ ![image](https://user-images.githubusercontent.com/38733166/202278652-c3c334e5-3149-40ee-9627-43bd5e386209.png)   
+ 
+ 
+ #### Instalar Appium Client versão v1.17.1-1   
+ Baixar o executável para Windows do [Appium](https://github.com/appium/appium-desktop/releases/tag/v1.17.1-1).  
+ 
+Ao terminar a instalação e abrir o Appium, devemos abrir o ícone e cair na seguinte tela:  
+![image](https://user-images.githubusercontent.com/38733166/202280078-aaad1b57-e85e-4f23-a0ca-19a02ce0bb3e.png)
+
+
+Se clicarmos em __Edit Configurations__, podemos notar que se as variáveis `JAVA_HOME` e `ANDROID_HOME` foram informadas corretamente e passou pela verificação do `appium-doctor`, ela será exibida como na imagem seguinte:  
+
+![image](https://user-images.githubusercontent.com/38733166/202280600-22a0bdc4-0c02-4940-b6e0-efe38a3a390e.png)   
+
+
+De volta à tela inicial e clicarmos em __Start Server__, será aberta a tela que mostra as requisições que enviamos e respostas do servidor Appium. Nesta tela, podemos clicar na lupa do lado superior direito. Será aberto o __Inspector__ no qual faremos a configuração do device após o criarmos no Android Studio.  
+
+Luá fica no canto superior direito   
+
+![image](https://user-images.githubusercontent.com/38733166/202281483-a23d57be-38d3-4c4f-b1c0-5e79e583a418.png)
+
+
+Tela do Appium Inspector  
+
+![image](https://user-images.githubusercontent.com/38733166/202281632-d15d786e-125a-4a3f-87e4-0c6f56aeabfd.png)
+
+
 
 Para mais detalhes: [Appium](https://appium.io/docs/en/about-appium/api/#appium-api-documentation)    
+
+   
 
