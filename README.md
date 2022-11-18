@@ -16,45 +16,32 @@ Para garantir que foi instalada corretamente, vamos ver se ela foi listada ao ex
 
 Documentação:  
 [Robot Framework](https://robotframework.org/)   
-
 [Appium Robot](https://github.com/serhatbolsu/robotframework-appiumlibrary)  
 
 
 
 ### JDK 8   
-Precisaremos do Java 8 porque iremos emular os dispositivos mobile com AdroidStudio. A versão Java JDK 8 é compatível com o Appium e Selenium o que permite que o ambiente que estamos construindo se mantenha estável. 
-
-Baixar [JDK 8](https://www.oracle.com/br/java/technologies/javase/javase8-archive-downloads.html).  
+Precisaremos do Java 8 porque iremos emular os dispositivos mobile com AdroidStudio. A versão Java JDK 8 é compatível com o Appium e Selenium o que permite que o ambiente que estamos construindo se mantenha estável.  
+Baixar [JDK 8](https://www.oracle.com/br/java/technologies/javase/javase8-archive-downloads.html).    
+Fazer a instalação do Java junto ao JRE que será exibido como opção de instalação automática.  
  
-Fazer a instalação do Java junto ao JRE que será exibido como opção de instalação automática.
- 
- #### Configurar as variáveis de ambiente do Java.   
- 
-Em Variáveis do Ambiente. Criar a __Variável de Sistema__ `JAVA_HOME` com o caminho do diretório em que está o arquivo `jdk`, ficará algo como: C:\Program Files\Java\jdk1.8.0_202.  Ficará assim: 
- 
- ![image](https://user-images.githubusercontent.com/38733166/202262403-546e84c2-4262-40b7-b964-9fdfe581aa48.png)  
- 
-Precisamos, ainda em __Variáveis do Sistema__, passar o caminho dos binários (que é um subdiretório da pasta Java que setamos acima) do Java 8, para isso, precisamos adcionar na variável `PATH` o seguinte valor `%JAVA_HOME%\bin`.  Ficará assim:   
-
-![image](https://user-images.githubusercontent.com/38733166/202263608-e128cd72-4793-49a2-a5db-32d85ebe54de.png)  
-
+#### Configurar as variáveis de ambiente do Java.   
+Em Variáveis do Ambiente. Criar a __Variável de Sistema__ `JAVA_HOME` com o caminho do diretório em que está o arquivo `jdk`, ficará algo como: C:\Program Files\Java\jdk1.8.0_202.  Ficará assim:    
+![image](https://user-images.githubusercontent.com/38733166/202262403-546e84c2-4262-40b7-b964-9fdfe581aa48.png)  
+ Precisamos, ainda em __Variáveis do Sistema__, passar o caminho dos binários (que é um subdiretório da pasta Java que setamos acima) do Java 8, para isso, precisamos adcionar na variável `PATH` o seguinte valor `%JAVA_HOME%\bin`.  Ficará assim:   
+![image](https://user-images.githubusercontent.com/38733166/202263608-e128cd72-4793-49a2-a5db-32d85ebe54de.png)   
 Tudo que é passado para a variável PATH, se tornará global no sistema. Ou seja, seu escopo será toda parte do sistema, não exclusivamente um diretório.     
 
 ### Android Studio  
-
 O Android Studio é uma plataforma para desenvolvimento de aplicativos Mobile, precisamos dele porque o SDK (Conjunto de ferramentas para desenvolvimento Android) e AVD (Android Virtual Device) está acomplado na plataforma e será útil para automação dos testes.    
+Baixar [Android Studio](https://developer.android.com/studio)  
 
-Baixar [Android Studio](https://developer.android.com/studio)
+Para criar nosso device, usaremos o AVD Manager:   
 
-Para criar nosso device, usaremos o AVD Manager: 
-
- #### Configurar as variáveis de ambiente do Android Studio, a `ANDROID_HOME`.   
- 
- Em Variáveis do Ambiente. Criar uma nova __Variável de Sistema__ chamada `ANDROID_HOME`. O valor dessa variável, será o caminho do __SDK__ que está dentro de: `C:\Users\my_profile\AppData\Local\Android\Sdk`. O diretório __AppData__, é um __diretório oculto__, portanto, para facilitar pode ser informado manualmente na barra do Windows Explorer após o diretório do seu usuário.  Esse será o valor da variável `ANDROID_HOME`:  
- 
- ![image](https://user-images.githubusercontent.com/38733166/202271692-b7f57ac3-d57c-4a45-88e0-e8899c508a00.png)  
- 
- Mais uma vez em __variáveis do sistema__, devemos adicionar novos diretórios na variável `PATH`, passando os valores com `%ANDROID_HOME%\` . Essa 'sintaxe', já traz o diretório que informamos incialmente quando definimos o diretório valor para `ANDROID_HOME` acima. Então, agora precisaremos apenas de algumas outras pastas que são exibidas abaixo, mas você pode encontrar no local que está o `SDK`
+ #### Configurar as variáveis de ambiente do Android Studio, a `ANDROID_HOME`.    
+ Em Variáveis do Ambiente. Criar uma nova __Variável de Sistema__ chamada `ANDROID_HOME`. O valor dessa variável, será o caminho do __SDK__ que está dentro de: `C:\Users\my_profile\AppData\Local\Android\Sdk`. O diretório __AppData__, é um __diretório oculto__, portanto, para facilitar pode ser informado manualmente na barra do Windows Explorer após o diretório do seu usuário.  Esse será o valor da variável `ANDROID_HOME`:   
+ ![image](https://user-images.githubusercontent.com/38733166/202271692-b7f57ac3-d57c-4a45-88e0-e8899c508a00.png)   
+ Mais uma vez em __variáveis do sistema__, devemos adicionar novos diretórios na variável `PATH`, passando os valores com `%ANDROID_HOME%\` . Essa 'sintaxe', já traz o diretório que informamos incialmente quando definimos o diretório valor para `ANDROID_HOME` acima. Então, agora precisaremos apenas de algumas outras pastas que são exibidas abaixo, mas você pode encontrar no local que está o `SDK`.  
  
  ![image](https://user-images.githubusercontent.com/38733166/202273642-d829e038-f1a4-48a6-9022-6a4d34950bcb.png)  
 
@@ -70,13 +57,13 @@ Appium possui um client em que configuramos o app e device que vamos interagir e
  Baixar uma versão LTS (versão estável) do NodeJS.  
  Baixar [NodeJS](https://nodejs.org/en/)  
  
- Agora precisamos instralar de maneira global o servidor Appium:  
+* Agora precisamos instralar de maneira global o servidor Appium:  
  `npm install appium -g`   
  
- Instalar o Appium Doctor:    
+* Instalar o Appium Doctor:    
  `npm install appium-doctor -g`  
  
- Executar o Appium Doctor para verificar se o ambiente está com todas as configurações corretas para executar os testes.  
+ * Executar o Appium Doctor para verificar se o ambiente está com todas as configurações corretas para executar os testes.  
  `appium-doctor --android`  
  
  A saída esperada deve ser como o print abaixo. Onde está destacado, não precisamos nos preocupar porque são dependência opcionais, por isso destaquei.  
@@ -97,18 +84,22 @@ Se clicarmos em __Edit Configurations__, podemos notar que se as variáveis `JAV
 
 De volta à tela inicial do Appium se e clicarmos em __Start Server__, será aberta a tela que mostra as requisições que enviamos e respostas do servidor Appium.Neste momento, o servidor está online na porta 4723. Nesta tela, podemos clicar na lupa do lado superior direito. Será aberto o __Inspector__ no qual faremos a configuração do device após o criarmos no Android Studio.  
 
-Lupa fica no canto superior direito   
+#### Lupa fica no canto superior direito   
 
 ![image](https://user-images.githubusercontent.com/38733166/202282657-a825bb6a-a683-4908-8e98-bc27ddc9ba80.png)
 
 
-Tela do Appium Inspector
+#### Tela do Appium Inspector
 
 ![image](https://user-images.githubusercontent.com/38733166/202281632-d15d786e-125a-4a3f-87e4-0c6f56aeabfd.png)   
 
-Nesta tela, iremos passar as informações do Device que iremos criar no Android Studio e do aplicativo que iremos testar e startar o app no Android. 
+Nesta tela, iremos passar as informações do Device que iremos criar no Android Studio e do aplicativo que iremos testar e startar o app no Android.  Voltaremos a ela mais adiante.  
 
-Para mais detalhes: [Appium](https://appium.io/docs/en/about-appium/api/#appium-api-documentation)    
+Para mais detalhes: [Appium](https://appium.io/docs/en/about-appium/api/#appium-api-documentation)      
+
+### Emulando um aparelho de celular com Android Studio  
+
+Levando em consideração que tudo acima foi instalado corretamente, podemos agora escolher o aparelho que utilizaremos para executar os testes no Android Studio. Como testes mobile consomem muito recurso computacional, geralmente se opta por um aparelho simples.  
 
 
 
