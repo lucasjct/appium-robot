@@ -5,7 +5,21 @@
 ### Python   
 Como utilizaremos o Robot Framework neste projeto, é um pré-requisito termos a instalação do Python, uma vez que precisaremos utilizar o `pip`, gernciador de pacotes do Python, para instalar a libraries do Robot.
 
-Baixar [Python](https://www.python.org/)   
+Baixar [Python](https://www.python.org/)    
+
+### Robot Framework  
+Com o Python instalado, podemos agora instalar o Robot Framework com seguinte comando no terminal: `pip install robotframework`. Para garantir que foi instalado corretamente, execute: `robot --version`. A saída do comando deverá exibir a versão do Robot.  
+
+Vamos aproveitar e instalar a biblioteca Appium para o Robot: `pip install --upgrade robotframework-appiumlibrary`. 
+
+Para garantir que foi instalada corretamente, vamos ver se ela foi listada ao executar o comando `pip freeze` .  
+
+Documentação:  
+[Robot Framework](https://robotframework.org/)   
+
+[Appium Robot](https://github.com/serhatbolsu/robotframework-appiumlibrary)  
+
+
 
 ### JDK 8   
 Precisaremos do Java 8 porque iremos emular os dispositivos mobile com AdroidStudio. A versão Java JDK 8 é compatível com o Appium e Selenium o que permite que o ambiente que estamos construindo se mantenha estável. 
@@ -42,13 +56,7 @@ Para criar nosso device, usaremos o AVD Manager:
  
  Mais uma vez em __variáveis do sistema__, devemos adicionar novos diretórios na variável `PATH`, passando os valores com `%ANDROID_HOME%\` . Essa 'sintaxe', já traz o diretório que informamos incialmente quando definimos o diretório valor para `ANDROID_HOME` acima. Então, agora precisaremos apenas de algumas outras pastas que são exibidas abaixo, mas você pode encontrar no local que está o `SDK`
  
- ![image](https://user-images.githubusercontent.com/38733166/202273642-d829e038-f1a4-48a6-9022-6a4d34950bcb.png)
-
- 
-
- ### Criar o Android Virtual   
- 
-![image](https://user-images.githubusercontent.com/38733166/202269152-591d1d69-b43a-47b5-adcd-dca675139f4f.png)
+ ![image](https://user-images.githubusercontent.com/38733166/202273642-d829e038-f1a4-48a6-9022-6a4d34950bcb.png)  
 
 
 ### Appium     
@@ -87,20 +95,22 @@ Se clicarmos em __Edit Configurations__, podemos notar que se as variáveis `JAV
 ![image](https://user-images.githubusercontent.com/38733166/202280600-22a0bdc4-0c02-4940-b6e0-efe38a3a390e.png)   
 
 
-De volta à tela inicial e clicarmos em __Start Server__, será aberta a tela que mostra as requisições que enviamos e respostas do servidor Appium.Neste momento, o servidor está online na porta 4723. Nesta tela, podemos clicar na lupa do lado superior direito. Será aberto o __Inspector__ no qual faremos a configuração do device após o criarmos no Android Studio.  
+De volta à tela inicial do Appium se e clicarmos em __Start Server__, será aberta a tela que mostra as requisições que enviamos e respostas do servidor Appium.Neste momento, o servidor está online na porta 4723. Nesta tela, podemos clicar na lupa do lado superior direito. Será aberto o __Inspector__ no qual faremos a configuração do device após o criarmos no Android Studio.  
 
 Lupa fica no canto superior direito   
 
 ![image](https://user-images.githubusercontent.com/38733166/202282657-a825bb6a-a683-4908-8e98-bc27ddc9ba80.png)
 
 
-Tela do Appium Inspector  
+Tela do Appium Inspector
 
-![image](https://user-images.githubusercontent.com/38733166/202281632-d15d786e-125a-4a3f-87e4-0c6f56aeabfd.png)
+![image](https://user-images.githubusercontent.com/38733166/202281632-d15d786e-125a-4a3f-87e4-0c6f56aeabfd.png)   
 
-
+Nesta tela, iremos passar as informações do Device que iremos criar no Android Studio e do aplicativo que iremos testar e startar o app no Android. 
 
 Para mais detalhes: [Appium](https://appium.io/docs/en/about-appium/api/#appium-api-documentation)    
 
-   
+
+
+
 
