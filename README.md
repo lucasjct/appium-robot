@@ -107,7 +107,12 @@ Para criar um aparelho virtualizado, devemos na tela de boas vindas, clicar ao l
 
 Depois abrirá a janela pra criarmos o aparelho, então devemos clicar em  __Create Device__, como indica  a figura abaixo:  
 
-![image](https://user-images.githubusercontent.com/38733166/206177726-d7d089e9-0677-47a0-8628-1ae1524c2ecc.png)   
+![image](https://user-images.githubusercontent.com/38733166/206177726-d7d089e9-0677-47a0-8628-1ae1524c2ecc.png)     
+
+Abrirá a tela para selecionar o hardware. Nela escolheremos a opção __Phone__, e a imagem que será nosso aparelho. Nesse ponto, podemos escolher se o app terá acesso com o Play Store da Google, a resolução, densidade e polegada da tela. 
+
+![image](https://user-images.githubusercontent.com/38733166/206178552-908dd1c4-39ca-40b3-87c9-cab86c7ed2e9.png)
+
 
 
 
