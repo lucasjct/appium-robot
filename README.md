@@ -36,7 +36,6 @@ Tudo que é passado para a variável PATH, se tornará global no sistema. Ou sej
 O Android Studio é uma plataforma para desenvolvimento de aplicativos Mobile, precisamos dele porque o SDK (Conjunto de ferramentas para desenvolvimento Android) e AVD (Android Virtual Device) está acomplado na plataforma e será útil para automação dos testes.    
 Baixar [Android Studio](https://developer.android.com/studio)  
 
-Para criar nosso device, usaremos o AVD Manager:   
 
  #### Configurar as variáveis de ambiente do Android Studio, a `ANDROID_HOME`.    
  Em Variáveis do Ambiente. Criar uma nova __Variável de Sistema__ chamada `ANDROID_HOME`. O valor dessa variável, será o caminho do __SDK__ que está dentro de: `C:\Users\my_profile\AppData\Local\Android\Sdk`. O diretório __AppData__, é um __diretório oculto__, portanto, para facilitar pode ser informado manualmente na barra do Windows Explorer após o diretório do seu usuário.  Esse será o valor da variável `ANDROID_HOME`:   
@@ -97,9 +96,22 @@ Nesta tela, iremos passar as informações do Device que iremos criar no Android
 
 Para mais detalhes: [Appium](https://appium.io/docs/en/about-appium/api/#appium-api-documentation)      
 
-### Emulando um aparelho de celular com Android Studio  
+### Emulando um aparelho de celular com AVD (Android Virtual Device) no Android Studio  
 
-Levando em consideração que tudo acima foi instalado corretamente, podemos agora escolher o aparelho que utilizaremos para executar os testes no Android Studio. Como testes mobile consomem muito recurso computacional, geralmente se opta por um aparelho simples.  
+Levando em consideração que tudo acima foi instalado corretamente, podemos agora escolher o aparelho no AVD que utilizaremos para executar os testes no Android Studio.
+Como testes mobile consomem muito recurso computacional (memória e cpu principalmente), geralmente se opta por um aparelho mais simples.  
+
+Para criar um aparelho virtualizado, devemos na tela de boas vindas, clicar ao lado direito nos 3 pontinhos, e escolher a opção: Virtual Device Manager:
+
+![image](https://user-images.githubusercontent.com/38733166/206177335-911b85a3-b658-4131-b24b-83c5dda4349a.png)  
+
+Depois abrirá a janela pra criarmos o aparelho, então devemos clicar em  __Create Device__, como indica  a figura abaixo:  
+
+![image](https://user-images.githubusercontent.com/38733166/206177726-d7d089e9-0677-47a0-8628-1ae1524c2ecc.png)   
+
+
+
+
 
 
 
