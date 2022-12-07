@@ -105,17 +105,29 @@ Para criar um aparelho virtualizado, devemos na tela de boas vindas, clicar ao l
 
 ![image](https://user-images.githubusercontent.com/38733166/206177335-911b85a3-b658-4131-b24b-83c5dda4349a.png)  
 
-Depois abrirá a janela pra criarmos o aparelho, então devemos clicar em  __Create Device__, como indica  a figura abaixo:  
+* Depois abrirá a janela pra criarmos o aparelho, então devemos clicar em  __Create Device__, como indica  a figura abaixo:  
 
 ![image](https://user-images.githubusercontent.com/38733166/206177726-d7d089e9-0677-47a0-8628-1ae1524c2ecc.png)     
 
-Abrirá a tela para selecionar o hardware. Nela escolheremos a opção __Phone__, e a imagem que será nosso aparelho. Nesse ponto, podemos escolher se o app terá acesso com o Play Store da Google, a resolução, densidade e polegada da tela. Como foi dito, para melhor performance e amenizar o consumo de recursos, escolheremos o Pixel 3 e clicaremos em next.
+* Abrirá a tela para selecionar o hardware. Nela escolheremos a opção __Phone__, e a imagem que será nosso aparelho. Nesse ponto, podemos escolher se o app terá acesso com o Play Store da Google, a resolução, densidade e polegada da tela. Como foi dito, para melhor performance e amenizar o consumo de recursos, escolheremos o Pixel 3 e clicaremos em next.
 
 ![image](https://user-images.githubusercontent.com/38733166/206183994-764553b3-a2e4-4b6e-9eff-a8d1ec487085.png)   
 
-Nesta etapa, devemos escolher a imagem que será o SO do nosso Android. Por default, a opção __Pie__ já é marcada por obter melhor performance, então seguiremos com ela.  
+* Nesta etapa, devemos escolher a imagem que será o SO do nosso Android. Por default, a opção __Pie__ já é marcada por obter melhor performance, então seguiremos com ela.  
 
-![image](https://user-images.githubusercontent.com/38733166/206184742-7c78162e-9c1a-481d-8f83-ad3b70b80417.png)
+![image](https://user-images.githubusercontent.com/38733166/206184742-7c78162e-9c1a-481d-8f83-ad3b70b80417.png)  
+
+* Por fim, devemos confirmar as configurações que escolhemos e um nome para nosso aparelho. O nome, deixo o configurado por padrão, que é o exibido na tela abaixo:  
+
+![image](https://user-images.githubusercontent.com/38733166/206186870-a43acc0c-996b-4ce2-ab7b-21cf843b09eb.png)
+
+* Finalmente temos nosso aparelho pronto para ser emulado. Basta clicarmos em __play__ que ele será exibido na tela:  
+
+![image](https://user-images.githubusercontent.com/38733166/206187207-3ea1b090-17e2-4891-bfd2-68db8f46081c.png)  
+
+![image](https://user-images.githubusercontent.com/38733166/206187395-6ba01d86-5697-4e39-8e3b-605d26975172.png)
+
+
 
 
 
