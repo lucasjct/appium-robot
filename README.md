@@ -109,9 +109,15 @@ Depois abrirá a janela pra criarmos o aparelho, então devemos clicar em  __Cre
 
 ![image](https://user-images.githubusercontent.com/38733166/206177726-d7d089e9-0677-47a0-8628-1ae1524c2ecc.png)     
 
-Abrirá a tela para selecionar o hardware. Nela escolheremos a opção __Phone__, e a imagem que será nosso aparelho. Nesse ponto, podemos escolher se o app terá acesso com o Play Store da Google, a resolução, densidade e polegada da tela. 
+Abrirá a tela para selecionar o hardware. Nela escolheremos a opção __Phone__, e a imagem que será nosso aparelho. Nesse ponto, podemos escolher se o app terá acesso com o Play Store da Google, a resolução, densidade e polegada da tela. Como foi dito, para melhor performance e amenizar o consumo de recursos, escolheremos o Pixel 3 e clicaremos em next.
 
-![image](https://user-images.githubusercontent.com/38733166/206178552-908dd1c4-39ca-40b3-87c9-cab86c7ed2e9.png)
+![image](https://user-images.githubusercontent.com/38733166/206183994-764553b3-a2e4-4b6e-9eff-a8d1ec487085.png)   
+
+Nesta etapa, devemos escolher a imagem que será o SO do nosso Android. Por default, a opção __Pie__ já é marcada por obter melhor performance, então seguiremos com ela.  
+
+![image](https://user-images.githubusercontent.com/38733166/206184742-7c78162e-9c1a-481d-8f83-ad3b70b80417.png)
+
+
 
 
 
